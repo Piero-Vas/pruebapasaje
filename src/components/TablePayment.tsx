@@ -31,7 +31,7 @@ const TableIPayments: React.FC = () => {
 							'Content-Type': 'application/json',
 						},
 					};
-					await fetch(`${process.env.API_URL}/cities/${id}`, params).then(
+					await fetch(`http://3.14.43.44:4567/cities/${id}`, params).then(
 						(response) => {
 							if (!response.ok) {
 								return Promise.reject('some reason');
@@ -68,7 +68,7 @@ const TableIPayments: React.FC = () => {
 			// 		Authorization: `Bearer ${cooktoken}`,
 			// 		'Content-Type': 'application/json',
 			// 	},
-			// 	url: `${process.env.API_URL}/companies/list/`,
+			// 	url: `http://3.14.43.44:4567/companies/list/`,
 			// 	then: (data: {
 			// 		data: {
 			// 			companies: { id_company: any; company_name: any; phone: any }[];

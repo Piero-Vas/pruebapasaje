@@ -28,7 +28,7 @@ export const TableUsers: React.FC = () => {
           Authorization: `Bearer ${cooktoken}`,
           'Content-Type': 'application/json',
         },
-        url: `${process.env.API_URL}/admin/user/list`,
+        url: `http://3.14.43.44:4567/admin/user/list`,
         then: (data: {
           data: {
             users: {

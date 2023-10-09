@@ -11,7 +11,7 @@ export async function middleware(request: NextRequest) {
   }
 
   try {
-    const checkTokenResponse = await fetch(`${API_URL}/user/check`, {
+    const checkTokenResponse = await fetch(`http://3.14.43.44:4567/user/check`, {
       method: 'GET',
       headers: {
         Authorization: `Bearer ${tokenCookie?.value}`,

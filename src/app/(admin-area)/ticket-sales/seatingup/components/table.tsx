@@ -37,7 +37,7 @@ const TableItinerariesChange: React.FC = () => {
           Authorization: `Bearer ${cooktoken}`,
           'Content-Type': 'application/json',
         },
-        url: `${process.env.API_URL}/itineraries/list?city_origin=${origin}&city_destination=${destination}`,
+        url: `http://3.14.43.44:4567/itineraries/list?city_origin=${origin}&city_destination=${destination}`,
         then: (data: {
           data: {
             itineraries: {id_itinerary: any; departure_time: any; prices: {specifics: any }}[];

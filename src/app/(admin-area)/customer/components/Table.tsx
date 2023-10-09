@@ -30,7 +30,7 @@ const TableCity: React.FC = () => {
           Authorization: `Bearer ${cooktoken}`,
           'Content-Type': 'application/json',
         },
-        url: `${process.env.API_URL}/cities/list/`,
+        url: `http://3.14.43.44:4567/cities/list/`,
         then: (data: {data: {cities: {city_name: any}[]; total: any}}) =>
           data.data.cities.map((city: {city_name: any}) => [
             city.city_name,

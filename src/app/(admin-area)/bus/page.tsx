@@ -122,7 +122,7 @@ const Bus: React.FC = () => {
               ],
             )
           }
-          link={`${process.env.API_URL}/buses/list`}
+          link={`http://3.14.43.44:4567/buses/list`}
         />
       </div>
     </div>

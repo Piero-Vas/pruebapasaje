@@ -7,7 +7,7 @@ const cooktoken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNodXJy
 export const boxApi = createApi({
     reducerPath: 'boxApi',
     baseQuery: fetchBaseQuery({
-        baseUrl: API_URL,
+        baseUrl: "http://3.14.43.44:4567",
         headers: { 'Authorization': `Bearer ${cooktoken}` }
     }),
     endpoints: (builder)=>({
@@ -29,7 +29,7 @@ export const fetchdata = boxApi.endpoints.getDetailBox;
 // import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 // // Define el thunk para llamar a la API
-// export const fetchApiData = createAsyncThunk(API_URL, async () => {
+// export const fetchApiData = createAsyncThunk("http://3.14.43.44:4567", async () => {
 //   try {
 //     const response = await fetch('/cashiershift/detail/1',{
 //         method: 'GET',

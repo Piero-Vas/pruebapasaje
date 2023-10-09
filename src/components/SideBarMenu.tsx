@@ -117,7 +117,7 @@ const fetchMenuItems = async (): Promise<MenuItem[]> => {
         'Content-Type': 'application/json',
       },
     };
-    const check = await fetch(`${process.env.API_URL}/user/check`, params);
+    const check = await fetch(`http://3.14.43.44:4567/user/check`, params);
     const query = await check.json();
     menuItem = query['menu_items'];
     console.log('menuItem', menuItem);

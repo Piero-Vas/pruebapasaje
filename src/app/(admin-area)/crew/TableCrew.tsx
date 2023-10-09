@@ -33,7 +33,7 @@ const TableCrew: React.FC = () => {
           Authorization: `Bearer ${cooktoken}`,
           'Content-Type': 'application/json',
         },
-        url: `${API_URL}/subusers/list`,
+        url: `http://3.14.43.44:4567/subusers/list`,
         then: (data: {
           data: {
             subUsers: {

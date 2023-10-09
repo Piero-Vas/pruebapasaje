@@ -71,7 +71,7 @@ const TableCity: React.FC<Props> = ({ openEditCityModal }) => {
           Authorization: `Bearer ${cooktoken}`,
           'Content-Type': 'application/json',
         },
-        url: `${process.env.API_URL}/cities/list/`,
+        url: `http://3.14.43.44:4567/cities/list/`,
         then: (data: {
           data: {
             cities: { id_city: any; city_name: any; department: any; country: any }[];

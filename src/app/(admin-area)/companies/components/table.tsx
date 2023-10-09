@@ -78,7 +78,7 @@ const TableCompanies: React.FC = () => {
           Authorization: `Bearer ${cooktoken}`,
           'Content-Type': 'application/json',
         },
-        url: `${process.env.API_URL}/companies/list/`,
+        url: `http://3.14.43.44:4567/companies/list/`,
         then: (data: {
           data: {
             companies: {

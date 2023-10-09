@@ -7,7 +7,7 @@ const cooktoken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNodXJy
 export const seatsApi = createApi({
     reducerPath: 'seatsApi',
     baseQuery: fetchBaseQuery({
-        baseUrl: API_URL,
+        baseUrl: "http://3.14.43.44:4567",
         headers: { 'Authorization': `Bearer ${cooktoken}` }
     }),
     endpoints: (builder)=>({

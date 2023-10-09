@@ -65,7 +65,7 @@ const TableOffice: React.FC = () => {
           Authorization: `Bearer ${cooktoken}`,
           'Content-Type': 'application/json',
         },
-        url: `${process.env.API_URL}/office/list`,
+        url: `http://3.14.43.44:4567/office/list`,
         then: (data: {
           data: {
             offices: {

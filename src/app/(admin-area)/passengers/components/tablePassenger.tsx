@@ -69,7 +69,7 @@ const TablePassenger: React.FC = () => {
           Authorization: `Bearer ${cooktoken}`,
           'Content-Type': 'application/json',
         },
-        url: `${process.env.API_URL}/customers/list?current_page=1&page_size=20`,
+        url: `http://3.14.43.44:4567/customers/list?current_page=1&page_size=20`,
         then: (data: {
           data: {
             customers: { id_customer: any; name: any; last_name: any; phone: any; email:string, identification_number:string }[];

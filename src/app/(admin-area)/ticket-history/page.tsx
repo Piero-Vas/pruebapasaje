@@ -319,7 +319,7 @@ const TicketHistoryPage: React.FC = () => {
                 ],
             )
           }
-          link={`${process.env.API_URL}/tickets/pdf/list`}
+          link={`http://3.14.43.44:4567/tickets/pdf/list`}
         />
       </div>
     </div>

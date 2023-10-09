@@ -47,7 +47,7 @@ const CheckOut: React.FC = () => {
         },
       };
       const check = await fetch(
-        `${process.env.API_URL}/cashierbox/list?id_office=2`,
+        `http://3.14.43.44:4567/cashierbox/list?id_office=2`,
         params,
       );
       const query = await check.json();

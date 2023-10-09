@@ -172,7 +172,7 @@ const CheckoutDetails: React.FC = () => {
         },
       };
       const check = await fetch(
-        `${process.env.API_URL}/cashiershift/detail/1`,
+        `http://3.14.43.44:4567/cashiershift/detail/1`,
         params,
       );
       const query = await check.json();

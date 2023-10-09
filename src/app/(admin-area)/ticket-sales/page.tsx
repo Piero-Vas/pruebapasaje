@@ -40,7 +40,7 @@ const TicketSales: React.FC = () => {
           'Content-Type': 'application/json',
         },
       };
-      const check = await fetch(`${process.env.API_URL}/cashierbox/list?id_office=1`, params);
+      const check = await fetch(`http://3.14.43.44:4567/cashierbox/list?id_office=1`, params);
       const query = await check.json();
       let boxDetailApi = query['data']["cashierBox"];
      let status = boxDetailApi[0]["state"]
